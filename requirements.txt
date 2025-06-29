@@ -1,6 +1,6 @@
 transformers==4.40.0
 tokenizers==0.19.1
-accelerate==1.7.0
+accelerate
 langchain==0.3.25
 langchainhub==0.1.21
 langchain-chroma==0.2.3
@@ -9,4 +9,3 @@ langchain-community==0.3.24
 langchain_huggingface==0.2.0
 python-dotenv==1.1.0
 pypdf
-streamlit==1.46.0
