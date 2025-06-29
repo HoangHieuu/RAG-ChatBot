@@ -1,14 +1,22 @@
+streamlit==1.38.0
 transformers==4.40.0
-accelerate
+
+# for bitsandbytes 8-bit quant + CPU fallback
+accelerate>=0.21.0           # bitsandbytes 8-bit backend hook
+bitsandbytes>=0.39.0         # the actual bnb quantization code
+intel_extension_for_pytorch  # (optional) enable bnb on pure CPU
+
+# LangChain + Chroma + SQLite fix
 langchain==0.3.25
 langchainhub==0.1.21
 langchain-chroma==0.2.3
 langchain_experimental==0.3.4
 langchain-community==0.3.24
 langchain_huggingface==0.2.0
+
+# PDF loader + environment
 python-dotenv==1.1.0
 pypdf
+
+# force SQLite ≥3.35 for Chroma
 pysqlite3-binary>=0.4.7
-bitsandbytes>=0.39.0
-intel_extension_for_pytorch
-streamlit==1.38.0
