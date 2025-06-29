@@ -2,8 +2,8 @@ streamlit==1.38.0
 transformers==4.40.0
 
 # for bitsandbytes 8-bit quant + CPU fallback
-accelerate>=0.21.0           # bitsandbytes 8-bit backend hook
-bitsandbytes>=0.39.0         # the actual bnb quantization code
+accelerate>=0.22.0
+bitsandbytes>=0.41.0        # the actual bnb quantization code
 intel_extension_for_pytorch  # (optional) enable bnb on pure CPU
 
 # LangChain + Chroma + SQLite fix
