@@ -1,3 +1,8 @@
+import sys
+import pysqlite3
+# redirect all sqlite3 imports to our bundled newer sqlite
+
+sys.modules["sqlite3"] = pysqlite3
 import streamlit as st
 import tempfile
 import os
